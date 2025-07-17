@@ -3,6 +3,7 @@ from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import JSONResponse
 import json
 from pathlib import Path
+import logging
 from app.logger import get_logger
 from app.news_pipeline import run_news_pipeline
 
@@ -17,7 +18,12 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-logger = get_logger(__name__)
+# Logger (fallback in case get_logger fails)
+try:
+    logger = get_logger(__name__)
+except Exception:
+    logging.basicConfig(level=logging.INFO)
+    logger = logging.getLogger(__name__)
 
 @app.get("/")
 def root():
@@ -43,7 +49,10 @@ def fetch_and_cluster_news():
 
 @app.get("/api/news")
 def get_clustered_news():
-    output_file = Path("output/results.json")
+    output_dir = Path(__file__).parent.parent / "output"
+    output_dir.mkdir(parents=True, exist_ok=True)  # Ensure output/ exists
+    output_file = output_dir / "results.json"
+
     if not output_file.exists():
         logger.warning("No results file found.")
         return JSONResponse(
@@ -52,7 +61,7 @@ def get_clustered_news():
         )
 
     try:
-        with open(output_file, "r", encoding="utf-8") as f:
+        with output_file.open("r", encoding="utf-8") as f:
             data = json.load(f)
 
         # Validate structure
@@ -67,7 +76,7 @@ def get_clustered_news():
                 content={"error": "Unexpected results format"}
             )
 
-        # Ensure articles are in list format
+        # Ensure articles are list format
         for cluster in data_list:
             if not isinstance(cluster.get("articles", []), list):
                 cluster["articles"] = [cluster["articles"]]
