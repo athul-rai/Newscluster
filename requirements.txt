@@ -9,3 +9,4 @@ rapidfuzz
 uvicorn
 fastapi
 python-dotenv
+colorlog
