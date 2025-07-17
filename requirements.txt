@@ -6,3 +6,4 @@ scikit-learn
 transformers
 python-dotenv
 rapidfuzz
+uvicorn
