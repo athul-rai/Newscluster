@@ -8,3 +8,4 @@ python-dotenv
 rapidfuzz
 uvicorn
 fastapi
+python-dotenv
