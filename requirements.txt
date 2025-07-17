@@ -1,0 +1,8 @@
+requests
+nltk
+numpy
+sentence-transformers
+scikit-learn
+transformers
+python-dotenv
+rapidfuzz

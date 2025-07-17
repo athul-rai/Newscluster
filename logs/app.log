@@ -1,0 +1,161 @@
+[INFO] 2025-07-15 21:25:08 - app.fetch_news: Loaded API keys: ['530c11230d4d45309794557a7737c8fe', 'fbf27de3c4c440a9b59fdc623faca66f']
+[INFO] 2025-07-15 21:25:08 - app.api_server: Returning properly structured clustered news data.
+[INFO] 2025-07-15 21:26:20 - app.api_server: Health check OK
+[INFO] 2025-07-15 21:28:34 - app.api_server: Running news clustering pipeline...
+[INFO] 2025-07-15 21:28:34 - app.news_pipeline: Fetching latest news articles...
+[INFO] 2025-07-15 21:28:34 - app.fetch_news: Fetching latest worldwide news articles...
+[INFO] 2025-07-15 21:28:35 - app.fetch_news: Response code with key 530c11230d4d45309794557a7737c8fe: 200
+[INFO] 2025-07-15 21:28:35 - app.fetch_news: Fetched 27 articles successfully with key 530c11230d4d45309794557a7737c8fe.
+[INFO] 2025-07-15 21:28:36 - app.fetch_news: Response code with key fbf27de3c4c440a9b59fdc623faca66f: 200
+[INFO] 2025-07-15 21:28:36 - app.fetch_news: Fetched 27 articles successfully with key fbf27de3c4c440a9b59fdc623faca66f.
+[INFO] 2025-07-15 21:28:36 - app.fetch_news: 27 unique articles retained after deduplication.
+[INFO] 2025-07-15 21:28:36 - app.news_pipeline: Embedding 27 article titles...
+[INFO] 2025-07-15 21:28:36 - app.embedder: Generating embeddings for 27 sentences...
+[INFO] 2025-07-15 21:28:37 - app.embedder: Embedding generation complete.
+[INFO] 2025-07-15 21:28:37 - app.news_pipeline: Clustering article embeddings...
+[INFO] 2025-07-15 21:28:37 - app.clusterer: Clustering embeddings using DBSCAN...
+[INFO] 2025-07-15 21:28:37 - app.clusterer: Clustering complete. Found 1 clusters.
+[INFO] 2025-07-15 21:28:37 - app.save_results: Results saved to output/results.json
+[INFO] 2025-07-15 21:28:37 - app.news_pipeline: Clustering and result saving complete.
+[INFO] 2025-07-15 21:30:55 - app.fetch_news: Loaded API keys: ['530c11230d4d45309794557a7737c8fe', 'fbf27de3c4c440a9b59fdc623faca66f']
+[INFO] 2025-07-15 21:31:03 - app.api_server: Running news clustering pipeline...
+[INFO] 2025-07-15 21:31:03 - app.news_pipeline: Fetching latest news articles...
+[INFO] 2025-07-15 21:31:03 - app.fetch_news: Fetching latest worldwide news articles...
+[INFO] 2025-07-15 21:31:03 - app.fetch_news: Response code with key 530c11230d4d45309794557a7737c8fe: 200
+[INFO] 2025-07-15 21:31:03 - app.fetch_news: Fetched 27 articles successfully with key 530c11230d4d45309794557a7737c8fe.
+[INFO] 2025-07-15 21:31:04 - app.fetch_news: Response code with key fbf27de3c4c440a9b59fdc623faca66f: 200
+[INFO] 2025-07-15 21:31:04 - app.fetch_news: Fetched 27 articles successfully with key fbf27de3c4c440a9b59fdc623faca66f.
+[INFO] 2025-07-15 21:31:04 - app.fetch_news: 27 unique articles retained after deduplication.
+[INFO] 2025-07-15 21:31:04 - app.news_pipeline: Embedding 27 article titles...
+[INFO] 2025-07-15 21:31:04 - app.embedder: Generating embeddings for 27 sentences...
+[INFO] 2025-07-15 21:31:04 - app.embedder: Embedding generation complete.
+[INFO] 2025-07-15 21:31:04 - app.news_pipeline: Clustering article embeddings...
+[INFO] 2025-07-15 21:31:04 - app.clusterer: Clustering embeddings using DBSCAN...
+[INFO] 2025-07-15 21:31:04 - app.clusterer: Clustering complete. Found 1 clusters.
+[INFO] 2025-07-15 21:31:04 - app.save_results: Results saved to output/results.json
+[INFO] 2025-07-15 21:31:04 - app.news_pipeline: Clustering and result saving complete.
+[INFO] 2025-07-15 21:31:52 - app.api_server: Returning properly structured clustered news data.
+[INFO] 2025-07-15 21:35:24 - app.api_server: Returning properly structured clustered news data.
+[INFO] 2025-07-15 21:35:45 - app.fetch_news: Loaded API keys: ['530c11230d4d45309794557a7737c8fe', 'fbf27de3c4c440a9b59fdc623faca66f']
+[INFO] 2025-07-15 21:35:55 - app.api_server: Running news clustering pipeline...
+[INFO] 2025-07-15 21:35:55 - app.news_pipeline: Fetching latest news articles...
+[INFO] 2025-07-15 21:35:55 - app.fetch_news: Fetching latest worldwide news articles...
+[INFO] 2025-07-15 21:35:55 - app.fetch_news: Response code with key 530c11230d4d45309794557a7737c8fe: 200
+[INFO] 2025-07-15 21:35:55 - app.fetch_news: Fetched 27 articles successfully with key 530c11230d4d45309794557a7737c8fe.
+[INFO] 2025-07-15 21:35:56 - app.fetch_news: Response code with key fbf27de3c4c440a9b59fdc623faca66f: 200
+[INFO] 2025-07-15 21:35:56 - app.fetch_news: Fetched 27 articles successfully with key fbf27de3c4c440a9b59fdc623faca66f.
+[INFO] 2025-07-15 21:35:56 - app.fetch_news: 27 unique articles retained after deduplication.
+[INFO] 2025-07-15 21:35:56 - app.news_pipeline: Embedding 27 article titles...
+[INFO] 2025-07-15 21:35:56 - app.embedder: Generating embeddings for 27 sentences...
+[INFO] 2025-07-15 21:35:56 - app.embedder: Embedding generation complete.
+[INFO] 2025-07-15 21:35:56 - app.news_pipeline: Clustering article embeddings...
+[INFO] 2025-07-15 21:35:56 - app.clusterer: Clustering embeddings using DBSCAN...
+[INFO] 2025-07-15 21:35:56 - app.clusterer: Clustering complete. Found 1 clusters.
+[INFO] 2025-07-15 21:35:56 - app.save_results: Results saved to output/results.json
+[INFO] 2025-07-15 21:35:56 - app.news_pipeline: Returned 1 meaningful clusters.
+[INFO] 2025-07-15 21:36:03 - app.api_server: Returning properly structured clustered news data.
+[INFO] 2025-07-15 21:39:07 - app.api_server: Returning properly structured clustered news data.
+[INFO] 2025-07-15 21:41:54 - app.fetch_news: Loaded API keys: ['530c11230d4d45309794557a7737c8fe', 'fbf27de3c4c440a9b59fdc623faca66f']
+[INFO] 2025-07-15 21:42:13 - app.fetch_news: Loaded API keys: ['530c11230d4d45309794557a7737c8fe', 'fbf27de3c4c440a9b59fdc623faca66f']
+[INFO] 2025-07-15 21:42:13 - app.api_server: Returning properly structured clustered news data.
+[INFO] 2025-07-15 21:43:03 - app.api_server: Returning properly structured clustered news data.
+[INFO] 2025-07-15 21:44:29 - app.fetch_news: Loaded API keys: ['530c11230d4d45309794557a7737c8fe', 'fbf27de3c4c440a9b59fdc623faca66f']
+[INFO] 2025-07-15 21:44:29 - app.api_server: Returning properly structured clustered news data.
+[INFO] 2025-07-15 22:25:07 - app.api_server: Returning properly structured clustered news data.
+[INFO] 2025-07-15 22:26:15 - app.api_server: Returning properly structured clustered news data.
+[INFO] 2025-07-15 22:26:44 - app.api_server: Returning properly structured clustered news data.
+[INFO] 2025-07-15 22:26:52 - app.api_server: Returning properly structured clustered news data.
+[INFO] 2025-07-15 22:27:02 - app.api_server: Returning properly structured clustered news data.
+[INFO] 2025-07-15 22:27:20 - app.api_server: Health check OK
+[INFO] 2025-07-15 22:38:08 - __main__: Fetching latest news articles...
+[INFO] 2025-07-15 22:38:08 - app.fetch_news: Fetching latest worldwide news articles...
+[INFO] 2025-07-15 22:38:09 - app.fetch_news: [530c...] Page 1: 200
+[INFO] 2025-07-15 22:38:09 - app.fetch_news: Fetched 27 articles from page 1
+[INFO] 2025-07-15 22:38:10 - app.fetch_news: [fbf2...] Page 1: 200
+[INFO] 2025-07-15 22:38:10 - app.fetch_news: Fetched 27 articles from page 1
+[INFO] 2025-07-15 22:38:10 - app.fetch_news: Total fetched before deduplication: 54
+[INFO] 2025-07-15 22:38:10 - app.fetch_news: Total unique articles retained: 27
+[INFO] 2025-07-15 22:38:10 - __main__: Embedding 27 article titles...
+[INFO] 2025-07-15 22:38:10 - app.embedder: Generating embeddings for 27 sentences...
+[INFO] 2025-07-15 22:38:10 - app.embedder: Embedding generation complete.
+[INFO] 2025-07-15 22:38:10 - __main__: Clustering article embeddings...
+[INFO] 2025-07-15 22:40:04 - __main__: Fetching latest news articles...
+[INFO] 2025-07-15 22:40:04 - app.fetch_news: Fetching latest worldwide news articles...
+[INFO] 2025-07-15 22:40:06 - app.fetch_news: [530c...] Page 1: 200
+[INFO] 2025-07-15 22:40:06 - app.fetch_news: Fetched 27 articles from page 1
+[INFO] 2025-07-15 22:40:07 - app.fetch_news: [fbf2...] Page 1: 200
+[INFO] 2025-07-15 22:40:07 - app.fetch_news: Fetched 27 articles from page 1
+[INFO] 2025-07-15 22:40:07 - app.fetch_news: Total fetched before deduplication: 54
+[INFO] 2025-07-15 22:40:07 - app.fetch_news: Total unique articles retained: 27
+[INFO] 2025-07-15 22:40:07 - __main__: Embedding 27 article titles...
+[INFO] 2025-07-15 22:40:07 - app.embedder: Generating embeddings for 27 sentences...
+[INFO] 2025-07-15 22:40:07 - app.embedder: Embedding generation complete.
+[INFO] 2025-07-15 22:40:07 - __main__: Clustering article embeddings...
+[INFO] 2025-07-15 22:40:07 - app.clusterer: Clustering embeddings using DBSCAN...
+[INFO] 2025-07-15 22:40:07 - app.clusterer: ✅ Clustering complete. Found 1 clusters.
+[INFO] 2025-07-15 22:40:07 - app.summarizer: Summarizing cluster with 2 articles
+[INFO] 2025-07-15 22:40:11 - app.save_results: ✅ Results saved to output/results.json
+[INFO] 2025-07-15 22:40:11 - __main__: Clustering, summarization, and result saving complete.
+[INFO] 2025-07-15 22:41:58 - __main__: Fetching latest news articles...
+[INFO] 2025-07-15 22:41:58 - app.fetch_news: Fetching latest worldwide news articles...
+[INFO] 2025-07-15 22:41:59 - app.fetch_news: [530c...] Page 1: 200
+[INFO] 2025-07-15 22:41:59 - app.fetch_news: Fetched 27 articles from page 1
+[INFO] 2025-07-15 22:41:59 - app.fetch_news: [fbf2...] Page 1: 200
+[INFO] 2025-07-15 22:41:59 - app.fetch_news: Fetched 27 articles from page 1
+[INFO] 2025-07-15 22:41:59 - app.fetch_news: Total fetched before deduplication: 54
+[INFO] 2025-07-15 22:41:59 - app.fetch_news: Total unique articles retained: 27
+[INFO] 2025-07-15 22:41:59 - __main__: Embedding 27 article titles...
+[INFO] 2025-07-15 22:41:59 - app.embedder: Generating embeddings for 27 sentences...
+[INFO] 2025-07-15 22:41:59 - app.embedder: Embedding generation complete.
+[INFO] 2025-07-15 22:41:59 - __main__: Clustering article embeddings...
+[INFO] 2025-07-15 22:41:59 - app.clusterer: Clustering embeddings using DBSCAN...
+[INFO] 2025-07-15 22:41:59 - app.clusterer: ✅ Clustering complete. Found 2 clusters.
+[INFO] 2025-07-15 22:41:59 - app.summarizer: Summarizing cluster with 4 articles
+[INFO] 2025-07-15 22:42:03 - app.summarizer: Summarizing cluster with 2 articles
+[INFO] 2025-07-15 22:42:04 - app.save_results: ✅ Results saved to output/results.json
+[INFO] 2025-07-15 22:42:04 - __main__: Clustering, summarization, and result saving complete.
+[INFO] 2025-07-15 22:58:31 - __main__: Fetching latest news articles...
+[INFO] 2025-07-15 22:58:31 - app.fetch_news: Fetching latest worldwide news articles...
+[INFO] 2025-07-15 22:58:33 - app.fetch_news: [530c...] Page 1: 200
+[INFO] 2025-07-15 22:58:33 - app.fetch_news: Fetched 30 articles from page 1
+[INFO] 2025-07-15 22:58:34 - app.fetch_news: [fbf2...] Page 1: 200
+[INFO] 2025-07-15 22:58:34 - app.fetch_news: Fetched 30 articles from page 1
+[INFO] 2025-07-15 22:58:34 - app.fetch_news: Total fetched before deduplication: 60
+[INFO] 2025-07-15 22:58:34 - app.fetch_news: Total unique articles retained: 30
+[INFO] 2025-07-15 22:58:34 - __main__: Categorizing articles manually based on topic keywords...
+[INFO] 2025-07-15 23:00:23 - __main__: Fetching latest news articles...
+[INFO] 2025-07-15 23:00:23 - app.fetch_news: Fetching latest worldwide news articles...
+[INFO] 2025-07-15 23:00:24 - app.fetch_news: [530c...] Page 1: 200
+[INFO] 2025-07-15 23:00:24 - app.fetch_news: Fetched 30 articles from page 1
+[INFO] 2025-07-15 23:00:25 - app.fetch_news: [fbf2...] Page 1: 200
+[INFO] 2025-07-15 23:00:25 - app.fetch_news: Fetched 30 articles from page 1
+[INFO] 2025-07-15 23:00:25 - app.fetch_news: Total fetched before deduplication: 60
+[INFO] 2025-07-15 23:00:25 - app.fetch_news: Total unique articles retained: 30
+[INFO] 2025-07-15 23:00:25 - __main__: Categorizing articles manually based on topic keywords...
+[INFO] 2025-07-15 23:00:25 - app.summarizer: Summarizing cluster with 14 articles
+[INFO] 2025-07-15 23:00:31 - app.summarizer: Summarizing cluster with 6 articles
+[INFO] 2025-07-15 23:00:35 - app.summarizer: Summarizing cluster with 2 articles
+[INFO] 2025-07-15 23:00:38 - app.summarizer: Summarizing cluster with 3 articles
+[INFO] 2025-07-15 23:00:42 - app.summarizer: Summarizing cluster with 2 articles
+[INFO] 2025-07-15 23:00:44 - app.summarizer: Summarizing cluster with 1 articles
+[INFO] 2025-07-15 23:00:47 - app.summarizer: Summarizing cluster with 2 articles
+[INFO] 2025-07-15 23:00:49 - app.save_results: ✅ Results saved to output/results.json
+[INFO] 2025-07-15 23:00:49 - __main__: ✅ Categorization, summarization, and saving complete.
+[INFO] 2025-07-15 23:10:43 - app.api_server: Returning properly structured clustered news data.
+[INFO] 2025-07-15 23:15:39 - app.api_server: Returning properly structured clustered news data.
+[INFO] 2025-07-15 23:17:52 - app.api_server: Returning properly structured clustered news data.
+[INFO] 2025-07-15 23:19:55 - app.api_server: Returning properly structured clustered news data.
+[INFO] 2025-07-15 23:22:28 - app.api_server: Returning properly structured clustered news data.
+[INFO] 2025-07-15 23:25:35 - app.api_server: Returning properly structured clustered news data.
+[INFO] 2025-07-15 23:27:34 - __main__: Fetching latest news articles...
+[INFO] 2025-07-15 23:27:34 - app.fetch_news: Fetching latest worldwide news articles...
+[INFO] 2025-07-15 23:27:35 - app.fetch_news: [530c...] Page 1: 200
+[INFO] 2025-07-15 23:27:35 - app.fetch_news: Fetched 30 articles from page 1
+[INFO] 2025-07-15 23:27:36 - app.fetch_news: [fbf2...] Page 1: 200
+[INFO] 2025-07-15 23:27:36 - app.fetch_news: Fetched 30 articles from page 1
+[INFO] 2025-07-15 23:27:36 - app.fetch_news: Total fetched before deduplication: 60
+[INFO] 2025-07-15 23:27:36 - app.fetch_news: Total unique articles retained: 30
+[INFO] 2025-07-15 23:27:36 - __main__: Categorizing articles manually based on topic keywords...
+[INFO] 2025-07-15 23:27:36 - app.save_results: ✅ Results saved to output/results.json
+[INFO] 2025-07-15 23:27:36 - __main__: ✅ Categorization and saving complete.
+[INFO] 2025-07-15 23:28:02 - app.api_server: Returning properly structured clustered news data.

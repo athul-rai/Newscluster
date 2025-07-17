@@ -1,0 +1,39 @@
+Decided to build a web app that fetches daily news articles from multiple sources and detects the most important news stories based on how many websites or papers cover them.
+
+Selected NewsAPI.org as the data source because it offers a free tier, has a clean and simple REST API, and provides access to multiple global news sites.
+
+Created an account on NewsAPI.org and generated an API key for accessing the API.
+
+Installed Python 3.12 on the system to run and develop the scripts.
+
+Installed pip, Python’s package manager, which comes bundled with Python 3.12.
+
+Installed VS Code as the code editor for writing and managing the project’s Python scripts.
+
+Created a dedicated project folder named newspaper to keep all files organized.
+
+Installed the requests library using pip, which allows making HTTP requests to the NewsAPI.
+
+Wrote a Python script named fetch_news.py to fetch top news headlines from NewsAPI by sending requests to the endpoint https://newsapi.org/v2/top-headlines using the API key.
+
+Passed necessary parameters like language as English, number of articles to fetch, and the API key in the request.
+
+Retrieved the API response in JSON format containing articles with details like title, description, URL, and published date.
+
+Extracted and printed the titles of the fetched news articles to confirm that the data fetching worked correctly.
+
+Realized the core challenge that the same important news appears on multiple sites with different wording, so simple text matching won’t work to detect repeated stories.
+
+Decided to use AI and Natural Language Processing techniques to compare the meaning of different news headlines instead of just matching exact words.
+
+Planned to use sentence embeddings to convert headlines into numerical vectors that represent their meaning.
+
+Chose the sentence-transformers library to generate these sentence embeddings because it’s lightweight, efficient, and designed for such tasks.
+
+Decided to use the scikit-learn library to calculate cosine similarity between those sentence embeddings, which measures how similar two pieces of text are.
+
+Planned to identify pairs of headlines with a similarity score above a certain threshold (like 0.6) and consider them as reporting the same news event.
+
+Prepared a Python test script using a few sample headlines to test the similarity detection method before applying it to actual fetched news.
+
+Scheduled to install sentence-transformers and scikit-learn libraries using pip before running the similarity detection script.
